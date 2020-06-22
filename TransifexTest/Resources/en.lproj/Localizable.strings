@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TransifexTest
+
+  Created by Bibin Jacob Pulickal on 22/06/20.
+  Copyright © 2020 bibinjacobpulickal. All rights reserved.
+*/
+
+"Hello"    = "Hello";
+"Register" = "Register for a new account";
+
+"importContacts"   = "Import Contacts";
+"deviceContacts"   = "Device Contacts";

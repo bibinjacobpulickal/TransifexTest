@@ -13,6 +13,7 @@
 		EF44E4AF24A08637000092C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF44E4AD24A08637000092C4 /* Main.storyboard */; };
 		EF44E4B124A0863E000092C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF44E4B024A0863E000092C4 /* Assets.xcassets */; };
 		EF44E4B424A0863E000092C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF44E4B224A0863E000092C4 /* LaunchScreen.storyboard */; };
+		EF44E4C024A08D40000092C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF44E4C224A08D40000092C4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,10 @@
 		EF44E4B024A0863E000092C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF44E4B324A0863E000092C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF44E4B524A0863E000092C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF44E4BC24A08C73000092C4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EF44E4C124A08D40000092C4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF44E4C324A08D4C000092C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF44E4CB24A08FF8000092C4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 		EF44E4A624A08637000092C4 /* TransifexTest */ = {
 			isa = PBXGroup;
 			children = (
+				EF44E4BD24A08C8D000092C4 /* Resources */,
 				EF44E4A724A08637000092C4 /* AppDelegate.swift */,
 				EF44E4A924A08637000092C4 /* SceneDelegate.swift */,
 				EF44E4AB24A08637000092C4 /* ViewController.swift */,
@@ -65,6 +71,14 @@
 				EF44E4B524A0863E000092C4 /* Info.plist */,
 			);
 			path = TransifexTest;
+			sourceTree = "<group>";
+		};
+		EF44E4BD24A08C8D000092C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF44E4C224A08D40000092C4 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +123,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = EF44E49B24A08637000092C4;
 			productRefGroup = EF44E4A524A08637000092C4 /* Products */;
@@ -126,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF44E4B424A0863E000092C4 /* LaunchScreen.storyboard in Resources */,
+				EF44E4C024A08D40000092C4 /* Localizable.strings in Resources */,
 				EF44E4B124A0863E000092C4 /* Assets.xcassets in Resources */,
 				EF44E4AF24A08637000092C4 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +167,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EF44E4AE24A08637000092C4 /* Base */,
+				EF44E4CB24A08FF8000092C4 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,8 +176,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				EF44E4B324A0863E000092C4 /* Base */,
+				EF44E4BC24A08C73000092C4 /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF44E4C224A08D40000092C4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF44E4C124A08D40000092C4 /* de */,
+				EF44E4C324A08D4C000092C4 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +197,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
